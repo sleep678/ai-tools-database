@@ -1,0 +1,3331 @@
+{
+  "metadata": {
+    "name": "Natural Language Automation Tools Database | 自然语言自动化工具数据库",
+    "version": "0.2",
+    "description": "收录所有通过自然语言指令实现自动化操作的工具/平台/框架。分类覆盖：电脑控制、代码生成、工作流自动化、文档处理、数据分析、设计创作、科学研究、商务销售、内容写作、个人助理、行业特定、开源框架。",
+    "author": "Xiao Yi (小艺)",
+    "last_updated": "2026-06-04",
+    "total_tools": 132,
+    "categories": [
+      {
+        "id": "computer-control",
+        "name": "电脑/浏览器控制",
+        "desc": "通过NL指令控制计算机桌面或浏览器"
+      },
+      {
+        "id": "code-generation",
+        "name": "代码生成",
+        "desc": "通过NL描述生成或修改代码"
+      },
+      {
+        "id": "workflow-automation",
+        "name": "工作流自动化",
+        "desc": "NL驱动的业务/流程自动化"
+      },
+      {
+        "id": "document-processing",
+        "name": "文档处理",
+        "desc": "NL驱动的文档生成、编辑、分析"
+      },
+      {
+        "id": "data-analysis",
+        "name": "数据分析",
+        "desc": "通过NL进行数据查询、分析、可视化"
+      },
+      {
+        "id": "design-creative",
+        "name": "设计创作",
+        "desc": "通过NL生成图像、视频、音乐、设计"
+      },
+      {
+        "id": "scientific-research",
+        "name": "科学研究",
+        "desc": "科研领域的NL自动化工具"
+      },
+      {
+        "id": "business-sales",
+        "name": "商务销售",
+        "desc": "销售、营销、客户管理的NL自动化"
+      },
+      {
+        "id": "content-writing",
+        "name": "内容写作",
+        "desc": "NL驱动的文章、文案生成"
+      },
+      {
+        "id": "personal-assistant",
+        "name": "个人助理",
+        "desc": "日常事务的NL自动化管理"
+      },
+      {
+        "id": "industry-specific",
+        "name": "行业特定",
+        "desc": "医疗、法律、金融等行业NL工具"
+      },
+      {
+        "id": "open-source-framework",
+        "name": "开源框架",
+        "desc": "构建NL自动化工具的框架/SDK"
+      },
+      {
+        "id": "search-knowledge",
+        "name": "搜索/知识",
+        "description": "AI搜索引擎和知识发现工具",
+        "icon": "search"
+      },
+      {
+        "id": "voice-conversation",
+        "name": "语音/对话",
+        "description": "语音交互和对话式AI工具",
+        "icon": "mic"
+      },
+      {
+        "id": "finance-investment",
+        "name": "金融/投资",
+        "description": "AI驱动的金融分析和投资工具",
+        "icon": "dollar"
+      },
+      {
+        "id": "education-learning",
+        "name": "教育/学习",
+        "description": "AI教育和学习辅助工具",
+        "icon": "book"
+      },
+      {
+        "id": "marketing-growth",
+        "name": "营销/增长",
+        "description": "AI驱动的营销和增长工具",
+        "icon": "chart"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "OpenAI Operator (CUA)",
+      "category": "computer-control",
+      "description": "基于Computer-Using Agent模型的浏览器代理，可自动填表、下单、导航网页",
+      "nl_input": "自然语言描述任务",
+      "nl_output": "自动完成浏览器操作",
+      "platform": "Web / ChatGPT集成",
+      "pricing": "ChatGPT Plus $20/月起",
+      "open_source": false,
+      "github": null,
+      "url": "https://openai.com/index/computer-using-agent/",
+      "pros": [
+        "集成ChatGPT生态",
+        "多步任务能力强",
+        "已产品化"
+      ],
+      "cons": [
+        "运行在云端",
+        "无持久记忆",
+        "仅限浏览器"
+      ]
+    },
+    {
+      "name": "Claude Computer Use",
+      "category": "computer-control",
+      "description": "Anthropic的计算机使用API，通过截图+鼠标键盘控制桌面",
+      "nl_input": "自然语言描述任务",
+      "nl_output": "模拟鼠标键盘操作桌面",
+      "platform": "API / 桌面应用",
+      "pricing": "API按量计费 / Pro $17-100/月",
+      "open_source": false,
+      "github": null,
+      "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool",
+      "pros": [
+        "直接控制桌面",
+        "长文档理解强",
+        "WebArena SOTA"
+      ],
+      "cons": [
+        "Beta阶段",
+        "速度较慢",
+        "截图依赖"
+      ]
+    },
+    {
+      "name": "Google Mariner",
+      "category": "computer-control",
+      "description": "Google基于Gemini 2.0的网页浏览代理",
+      "nl_input": "自然语言描述任务",
+      "nl_output": "自动操作浏览器",
+      "platform": "Web",
+      "pricing": "内测中",
+      "open_source": false,
+      "github": null,
+      "url": "https://deepmind.google/",
+      "pros": [
+        "Google生态集成",
+        "Gemini加持"
+      ],
+      "cons": [
+        "未公开发布",
+        "仅限浏览器"
+      ]
+    },
+    {
+      "name": "Manus AI",
+      "category": "computer-control",
+      "description": "通用AI Agent，可自主浏览网页、写代码、完成多步任务",
+      "nl_input": "自然语言描述目标",
+      "nl_output": "端到端任务完成",
+      "platform": "Web",
+      "pricing": "已收购，政策待定",
+      "open_source": false,
+      "github": null,
+      "url": "https://manus.im/",
+      "pros": [
+        "全自主执行",
+        "跨工具集成",
+        "任务完成度高"
+      ],
+      "cons": [
+        "价格较高",
+        "被Meta收购后状态未明"
+      ]
+    },
+    {
+      "name": "Browser Use",
+      "category": "computer-control",
+      "description": "开源浏览器代理框架，支持构建和运行网页自动化Agent",
+      "nl_input": "自然语言描述 + API调用",
+      "nl_output": "自动化浏览器操作",
+      "platform": "Python SDK / API",
+      "pricing": "免费开源",
+      "open_source": true,
+      "github": "https://github.com/browser-use/browser-use",
+      "pros": [
+        "完全开源",
+        "可本地部署",
+        "灵活定制"
+      ],
+      "cons": [
+        "需要技术背景",
+        "自建基础设施"
+      ]
+    },
+    {
+      "name": "UI-TARS Desktop",
+      "category": "computer-control",
+      "description": "本地运行的GUI自动化Agent，无需上传截图到云端",
+      "nl_input": "自然语言描述任务",
+      "nl_output": "桌面GUI操作",
+      "platform": "Desktop",
+      "pricing": "免费开源",
+      "open_source": true,
+      "github": "https://github.com/bytedance/ui-tars",
+      "pros": [
+        "本地隐私安全",
+        "字节跳动出品",
+        "无需云服务"
+      ],
+      "cons": [
+        "需要GPU",
+        "安装配置复杂"
+      ]
+    },
+    {
+      "name": "OpenManus",
+      "category": "computer-control",
+      "description": "Manus的开源替代品，社区驱动的AI Agent平台",
+      "nl_input": "自然语言描述高层次任务",
+      "nl_output": "网页浏览、数据抓取、工具调用",
+      "platform": "Self-hosted / Docker",
+      "pricing": "免费开源",
+      "open_source": true,
+      "github": "https://github.com/mannaandpoem/OpenManus",
+      "pros": [
+        "无需vendor锁定",
+        "数据自控",
+        "可定制"
+      ],
+      "cons": [
+        "需要Docker/Python",
+        "非开箱即用"
+      ]
+    },
+    {
+      "name": "Perplexity Computer",
+      "category": "computer-control",
+      "description": "多模型计算机使用编排，用于复杂研究和任务工作流",
+      "nl_input": "自然语言描述研究/任务",
+      "nl_output": "计算机操作 + 研究结果",
+      "platform": "Web",
+      "pricing": "Pro $20/月起",
+      "open_source": false,
+      "github": null,
+      "url": "https://www.perplexity.ai",
+      "pros": [
+        "多模型协作",
+        "研究能力突出"
+      ],
+      "cons": [
+        "相对较新",
+        "生态待完善"
+      ]
+    },
+    {
+      "name": "Cursor",
+      "category": "code-generation",
+      "description": "AI原生IDE，通过自然语言编辑代码、理解整个代码库",
+      "nl_input": "自然语言描述代码需求",
+      "nl_output": "自动生成/编辑代码",
+      "platform": "Desktop IDE",
+      "pricing": "免费 / Pro $20/月",
+      "open_source": false,
+      "github": null,
+      "url": "https://cursor.com",
+      "pros": [
+        "代码库全局理解",
+        "多文件编辑",
+        "上下文连续"
+      ],
+      "cons": [
+        "基于VS Code",
+        "依赖网络"
+      ]
+    },
+    {
+      "name": "GitHub Copilot",
+      "category": "code-generation",
+      "description": "GitHub推出的AI编程助手，支持代码补全和聊天",
+      "nl_input": "自然语言注释 + 聊天",
+      "nl_output": "代码补全/生成/修改",
+      "platform": "IDE插件 / 聊天界面",
+      "pricing": "免费 / $10-39/月",
+      "open_source": false,
+      "github": null,
+      "url": "https://github.com/features/copilot",
+      "pros": [
+        "VS Code深度集成",
+        "GitHub生态",
+        "模型能力强"
+      ],
+      "cons": [
+        "对超大代码库有限制",
+        "Copilot Chat需额外付费"
+      ]
+    },
+    {
+      "name": "Replit Agent (Ghostwriter)",
+      "category": "code-generation",
+      "description": "在线IDE + AI代理，NL描述即可构建完整应用",
+      "nl_input": "自然语言描述应用需求",
+      "nl_output": "完整可运行的应用",
+      "platform": "Web IDE",
+      "pricing": "免费 / Core $25/月",
+      "open_source": false,
+      "github": null,
+      "url": "https://replit.com",
+      "pros": [
+        "零配置",
+        "即时部署",
+        "完整应用生成"
+      ],
+      "cons": [
+        "依赖平台",
+        "复杂应用受限"
+      ]
+    },
+    {
+      "name": "Bolt.new",
+      "category": "code-generation",
+      "description": "浏览器内全栈应用生成器，NL描述→完整Web应用",
+      "nl_input": "自然语言描述应用",
+      "nl_output": "全栈Web应用",
+      "platform": "Web",
+      "pricing": "免费 / $20/月起",
+      "open_source": true,
+      "github": "https://github.com/stackblitz/bolt.new",
+      "pros": [
+        "即写即预览",
+        "全栈生成",
+        "开源"
+      ],
+      "cons": [
+        "Web应用为主",
+        "复杂逻辑受限"
+      ]
+    },
+    {
+      "name": "Lovable.dev",
+      "category": "code-generation",
+      "description": "NL驱动的Web应用构建器，专注前端+简单后端",
+      "nl_input": "自然语言描述UI/功能",
+      "nl_output": "Web应用",
+      "platform": "Web",
+      "pricing": "免费 / $20/月起",
+      "open_source": false,
+      "github": null,
+      "url": "https://lovable.dev",
+      "pros": [
+        "使用简单",
+        "UI生成质量好"
+      ],
+      "cons": [
+        "后端能力有限",
+        "不是全栈"
+      ]
+    },
+    {
+      "name": "Claude Code",
+      "category": "code-generation",
+      "description": "Anthropic的终端编程助手，NL描述→直接操作代码库",
+      "nl_input": "自然语言描述开发任务",
+      "nl_output": "终端内自动编辑/运行代码",
+      "platform": "CLI终端",
+      "pricing": "API按量付费",
+      "open_source": false,
+      "github": null,
+      "url": "https://docs.anthropic.com/en/docs/claude-code",
+      "pros": [
+        "终端原生",
+        "代码库操作强",
+        "可执行命令"
+      ],
+      "cons": [
+        "CLI操作",
+        "学习曲线"
+      ]
+    },
+    {
+      "name": "Windsurf (Codeium)",
+      "category": "code-generation",
+      "description": "AI编程IDE，支持NL代码生成、补全、聊天",
+      "nl_input": "自然语言描述代码",
+      "nl_output": "代码补全/生成",
+      "platform": "Desktop IDE",
+      "pricing": "免费 / Pro $15/月",
+      "open_source": false,
+      "github": null,
+      "url": "https://codeium.com/windsurf",
+      "pros": [
+        "免费版功能强",
+        "多语言支持"
+      ],
+      "cons": [
+        "不如Cursor深入",
+        "起步较晚"
+      ]
+    },
+    {
+      "name": "v0 by Vercel",
+      "category": "code-generation",
+      "description": "NL描述→React/Next.js组件和页面生成",
+      "nl_input": "自然语言描述UI",
+      "nl_output": "React组件代码",
+      "platform": "Web",
+      "pricing": "免费 / Pro $20/月",
+      "open_source": false,
+      "github": null,
+      "url": "https://v0.dev",
+      "pros": [
+        "前端生成质量极高",
+        "Vercel部署一体化"
+      ],
+      "cons": [
+        "仅前端",
+        "仅React/Next.js"
+      ]
+    },
+    {
+      "name": "Zapier Central",
+      "category": "workflow-automation",
+      "description": "Zapier的AI Agent，通过NL训练后可连接6000+应用自动化流程",
+      "nl_input": "自然语言描述工作流",
+      "nl_output": "跨应用自动化任务",
+      "platform": "Web",
+      "pricing": "免费 / $19.99/月起",
+      "open_source": false,
+      "github": null,
+      "url": "https://zapier.com/central",
+      "pros": [
+        "6000+应用集成",
+        "零代码",
+        "AI训练bot"
+      ],
+      "cons": [
+        "无可视化浏览器",
+        "复杂流程有限"
+      ]
+    },
+    {
+      "name": "n8n AI",
+      "category": "workflow-automation",
+      "description": "开源工作流自动化平台，AI节点支持NL构建Agent",
+      "nl_input": "自然语言描述工作流",
+      "nl_output": "自动执行的工作流",
+      "platform": "Self-hosted / Cloud",
+      "pricing": "免费开源 / Cloud $20/月起",
+      "open_source": true,
+      "github": "https://github.com/n8n-io/n8n",
+      "pros": [
+        "完全开源",
+        "400+集成",
+        "自托管"
+      ],
+      "cons": [
+        "需要运维",
+        "配置有一定门槛"
+      ]
+    },
+    {
+      "name": "Make (Integromat) AI",
+      "category": "workflow-automation",
+      "description": "可视化工作流自动化平台，AI辅助构建场景",
+      "nl_input": "自然语言描述自动化需求",
+      "nl_output": "可视化工作流",
+      "platform": "Web",
+      "pricing": "免费 / $9/月起",
+      "open_source": false,
+      "github": null,
+      "url": "https://make.com",
+      "pros": [
+        "可视化界面友好",
+        "集成丰富"
+      ],
+      "cons": [
+        "价格较Zapier低但场景有限",
+        "AI功能较基础"
+      ]
+    },
+    {
+      "name": "Microsoft Copilot (Office)",
+      "category": "document-processing",
+      "description": "微软全产品线的AI助手，NL控制Word/Excel/PPT/Outlook等",
+      "nl_input": "自然语言描述文档/表格/邮件需求",
+      "nl_output": "生成/编辑/分析文档",
+      "platform": "Office 365集成",
+      "pricing": "Copilot Pro $30/月/用户",
+      "open_source": false,
+      "github": null,
+      "url": "https://copilot.microsoft.com",
+      "pros": [
+        "Office全线集成",
+        "企业级安全",
+        "生态强大"
+      ],
+      "cons": [
+        "价格较高",
+        "仅限微软生态"
+      ]
+    },
+    {
+      "name": "Notion AI",
+      "category": "document-processing",
+      "description": "Notion内置AI，NL生成、编辑、总结、翻译文档",
+      "nl_input": "自然语言描述",
+      "nl_output": "文档生成/编辑/问答",
+      "platform": "Web / Desktop / Mobile",
+      "pricing": "$10/月（加在Notion订阅上）",
+      "open_source": false,
+      "github": null,
+      "url": "https://notion.so",
+      "pros": [
+        "集成在笔记中",
+        "知识库问答",
+        "团队协作"
+      ],
+      "cons": [
+        "需要Notion生态",
+        "长文档能力一般"
+      ]
+    },
+    {
+      "name": "Google Workspace AI (Gemini)",
+      "category": "document-processing",
+      "description": "Google Workspace的AI助手，NL控制Docs/Sheets/Gmail等",
+      "nl_input": "自然语言描述需求",
+      "nl_output": "文档/表格/邮件",
+      "platform": "Workspace集成",
+      "pricing": "$30/月/用户",
+      "open_source": false,
+      "github": null,
+      "url": "https://workspace.google.com",
+      "pros": [
+        "Google生态",
+        "Gmail集成好"
+      ],
+      "cons": [
+        "功能不如Copilot深入"
+      ]
+    },
+    {
+      "name": "ChatGPT Advanced Data Analysis",
+      "category": "data-analysis",
+      "description": "ChatGPT内建数据分析功能，上传文件→NL分析→可视化",
+      "nl_input": "自然语言描述分析需求",
+      "nl_output": "分析结果+图表",
+      "platform": "Web (ChatGPT)",
+      "pricing": "Plus $20/月",
+      "open_source": false,
+      "github": null,
+      "url": "https://chatgpt.com",
+      "pros": [
+        "使用简单",
+        "Python后台执行",
+        "可迭代追问"
+      ],
+      "cons": [
+        "文件大小限制",
+        "隐私顾虑"
+      ]
+    },
+    {
+      "name": "Julius AI",
+      "category": "data-analysis",
+      "description": "专注数据分析的AI工具，NL查询→统计分析→可视化",
+      "nl_input": "自然语言描述数据分析需求",
+      "nl_output": "统计图表+报告",
+      "platform": "Web / Google Sheets插件",
+      "pricing": "免费 / Pro $49/月",
+      "open_source": false,
+      "github": null,
+      "url": "https://julius.ai",
+      "pros": [
+        "数据专用",
+        "支持CSV/Excel直接上传",
+        "统计分析能力强"
+      ],
+      "cons": [
+        "价格较高",
+        "大数据集受限"
+      ]
+    },
+    {
+      "name": "Canva AI",
+      "category": "design-creative",
+      "description": "Canva内置AI设计工具，NL描述→设计/海报/演示",
+      "nl_input": "自然语言描述设计需求",
+      "nl_output": "设计成品",
+      "platform": "Web / Desktop",
+      "pricing": "免费 / Pro $13/月",
+      "open_source": false,
+      "github": null,
+      "url": "https://canva.com",
+      "pros": [
+        "零门槛",
+        "模板丰富",
+        "团队协作"
+      ],
+      "cons": [
+        "设计深度有限",
+        "不适合专业出版"
+      ]
+    },
+    {
+      "name": "Adobe Firefly",
+      "category": "design-creative",
+      "description": "Adobe生成式AI，NL描述→图像/矢量/设计效果",
+      "nl_input": "自然语言描述图像/设计",
+      "nl_output": "生成图像/编辑设计",
+      "platform": "Web / Adobe集成",
+      "pricing": "免费额度 / Pro $30/月",
+      "open_source": false,
+      "github": null,
+      "url": "https://firefly.adobe.com",
+      "pros": [
+        "Adobe生态",
+        "商用安全",
+        "质量控制好"
+      ],
+      "cons": [
+        "需Adobe订阅",
+        "创意控制有限"
+      ]
+    },
+    {
+      "name": "Midjourney",
+      "category": "design-creative",
+      "description": "图像生成AI，NL描述→高质图像",
+      "nl_input": "文本Prompt",
+      "nl_output": "图像",
+      "platform": "Discord / Web",
+      "pricing": "$10-60/月",
+      "open_source": false,
+      "github": null,
+      "url": "https://www.midjourney.com",
+      "pros": [
+        "图像质量顶级",
+        "风格多样"
+      ],
+      "cons": [
+        "需Discord",
+        "不适合修改已有图片"
+      ]
+    },
+    {
+      "name": "Suno",
+      "category": "design-creative",
+      "description": "AI音乐生成，NL描述→音乐/歌曲",
+      "nl_input": "文本描述音乐风格/歌词",
+      "nl_output": "生成的音乐",
+      "platform": "Web / Discord",
+      "pricing": "免费 / Pro $10/月起",
+      "open_source": false,
+      "github": null,
+      "url": "https://suno.com",
+      "pros": [
+        "音乐质量高",
+        "歌词生成"
+      ],
+      "cons": [
+        "版权问题",
+        "控制精细度有限"
+      ]
+    },
+    {
+      "name": "RunwayML",
+      "category": "design-creative",
+      "description": "AI视频生成和编辑，NL描述→视频/特效",
+      "nl_input": "文本/图像→视频",
+      "nl_output": "生成的视频",
+      "platform": "Web",
+      "pricing": "免费 / Pro $15/月起",
+      "open_source": false,
+      "github": null,
+      "url": "https://runwayml.com",
+      "pros": [
+        "视频生成领先",
+        "编辑工具丰富"
+      ],
+      "cons": [
+        "价格较高",
+        "生成一致性待改进"
+      ]
+    },
+    {
+      "name": "Geneclaw",
+      "category": "scientific-research",
+      "description": "生物信息学分析平台，部分NL化操作界面",
+      "nl_input": "点击选中工具+参数配置",
+      "nl_output": "生信分析结果",
+      "platform": "Web",
+      "pricing": "按Credits计费",
+      "open_source": false,
+      "github": null,
+      "url": "https://geneclaw.com",
+      "pros": [
+        "一站式生信分析",
+        "工具丰富"
+      ],
+      "cons": [
+        "非纯NL控制",
+        "需手动配置参数",
+        "无Agent模式"
+      ]
+    },
+    {
+      "name": "Autodock Vina (CLI)",
+      "category": "scientific-research",
+      "description": "分子对接工具，纯CLI/NL控制缺失",
+      "nl_input": "无（需CLI命令）",
+      "nl_output": "无（生成输出文件）",
+      "platform": "CLI",
+      "pricing": "免费开源",
+      "open_source": true,
+      "github": "https://github.com/autodock/autodock-vina",
+      "pros": [
+        "分子对接行业标准",
+        "免费",
+        "批量处理"
+      ],
+      "cons": [
+        "无NL界面",
+        "格式转换繁琐",
+        "需手动配置"
+      ]
+    },
+    {
+      "name": "Rowan AI",
+      "category": "scientific-research",
+      "description": "云端计算化学平台，部分NL任务描述",
+      "nl_input": "任务配置界面",
+      "nl_output": "计算结果",
+      "platform": "Web / Python SDK",
+      "pricing": "按量计费",
+      "open_source": false,
+      "github": null,
+      "url": "https://rowan.ai",
+      "pros": [
+        "云端GPU",
+        "无需本地算力"
+      ],
+      "cons": [
+        "非NL原生",
+        "需学习SDK"
+      ]
+    },
+    {
+      "name": "Rework AI",
+      "category": "business-sales",
+      "description": "销售自动化AI，NL描述→自动研究客户、撰写邮件、更新CRM",
+      "nl_input": "自然语言描述销售任务",
+      "nl_output": "自动完成销售流程",
+      "platform": "Web",
+      "pricing": "$999/年起",
+      "open_source": false,
+      "github": null,
+      "url": "https://rework.com",
+      "pros": [
+        "销售专用",
+        "预置销售工具",
+        "CRM集成"
+      ],
+      "cons": [
+        "价格高",
+        "仅限销售场景"
+      ]
+    },
+    {
+      "name": "Suna (Kortix)",
+      "category": "business-sales",
+      "description": "无代码AI Agent构建器，NL描述→商务自动化",
+      "nl_input": "自然语言描述工作流",
+      "nl_output": "自动执行商务任务",
+      "platform": "Web",
+      "pricing": "免费 / $40/月起",
+      "open_source": false,
+      "github": null,
+      "url": "https://www.kortix.com",
+      "pros": [
+        "无代码",
+        "商务模板丰富",
+        "HubSpot/Salesforce集成"
+      ],
+      "cons": [
+        "较新产品",
+        "生态待完善"
+      ]
+    },
+    {
+      "name": "Jasper AI",
+      "category": "content-writing",
+      "description": "AI内容创作平台，NL描述→营销文案/博客/广告",
+      "nl_input": "自然语言描述内容需求",
+      "nl_output": "生成文案/文章",
+      "platform": "Web",
+      "pricing": "$49/月起",
+      "open_source": false,
+      "github": null,
+      "url": "https://jasper.ai",
+      "pros": [
+        "营销文案优化好",
+        "品牌声音定制"
+      ],
+      "cons": [
+        "价格较高",
+        "长篇文章一般"
+      ]
+    },
+    {
+      "name": "Grammarly AI",
+      "category": "content-writing",
+      "description": "AI写作助手，NL改写/润色/生成",
+      "nl_input": "打字/高亮文字",
+      "nl_output": "修改建议/重新生成",
+      "platform": "浏览器插件 / Web / Desktop",
+      "pricing": "免费 / Premium $12/月",
+      "open_source": false,
+      "github": null,
+      "url": "https://grammarly.com",
+      "pros": [
+        "全平台覆盖",
+        "实时检查",
+        "写作风格调整"
+      ],
+      "cons": [
+        "长文生成能力弱",
+        "主要用于修改"
+      ]
+    },
+    {
+      "name": "Motion AI",
+      "category": "personal-assistant",
+      "description": "AI日程管理，NL描述任务→自动排期",
+      "nl_input": "自然语言描述任务/日程",
+      "nl_output": "自动排程/日历管理",
+      "platform": "Web / Mobile",
+      "pricing": "$19-34/月",
+      "open_source": false,
+      "github": null,
+      "url": "https://motion.app",
+      "pros": [
+        "自动排程强",
+        "任务管理一体化"
+      ],
+      "cons": [
+        "价格较高",
+        "日历依赖"
+      ]
+    },
+    {
+      "name": "Mem AI",
+      "category": "personal-assistant",
+      "description": "AI知识管理笔记，NL搜索+自动整理",
+      "nl_input": "自然语言记录/搜索",
+      "nl_output": "知识自动关联/整理",
+      "platform": "Web / Mobile",
+      "pricing": "免费 / Pro $10/月",
+      "open_source": false,
+      "github": null,
+      "url": "https://mem.ai",
+      "pros": [
+        "自动知识关联",
+        "搜索能力强"
+      ],
+      "cons": [
+        "功能迭代中"
+      ]
+    },
+    {
+      "name": "OpenEvidence",
+      "category": "industry-specific",
+      "description": "医疗AI，NL查询临床知识/辅助决策",
+      "nl_input": "自然语言描述临床问题",
+      "nl_output": "循证医学答案",
+      "platform": "Web",
+      "pricing": "面向医疗机构",
+      "open_source": false,
+      "github": null,
+      "url": "https://openevidence.com",
+      "pros": [
+        "医疗垂直领域",
+        "循证医学"
+      ],
+      "cons": [
+        "非公开定价",
+        "仅限美国"
+      ]
+    },
+    {
+      "name": "EvenUp",
+      "category": "industry-specific",
+      "description": "法律AI，NL描述案件→生成法律文档",
+      "nl_input": "自然语言描述案件",
+      "nl_output": "法律文书/案情分析",
+      "platform": "Web",
+      "pricing": "面向律所",
+      "open_source": false,
+      "github": null,
+      "url": "https://evenup.com",
+      "pros": [
+        "法律垂直",
+        "文档生成质量高"
+      ],
+      "cons": [
+        "仅限美国法",
+        "面向机构"
+      ]
+    },
+    {
+      "name": "Harvey AI",
+      "category": "industry-specific",
+      "description": "法律AI助手，NL法律研究/起草",
+      "nl_input": "自然语言描述法律问题",
+      "nl_output": "法律研究/文件起草",
+      "platform": "Web",
+      "pricing": "面向律所",
+      "open_source": false,
+      "github": null,
+      "url": "https://harvey.ai",
+      "pros": [
+        "顶级律所采用",
+        "法律研究深入"
+      ],
+      "cons": [
+        "价格高",
+        "仅限法律"
+      ]
+    },
+    {
+      "name": "AutoGPT",
+      "category": "open-source-framework",
+      "description": "自主AI Agent框架，NL目标→自主规划执行",
+      "nl_input": "自然语言描述目标",
+      "nl_output": "自主分解任务并执行",
+      "platform": "Python / CLI",
+      "pricing": "免费开源",
+      "open_source": true,
+      "github": "https://github.com/Significant-Gravitas/AutoGPT",
+      "pros": [
+        "最早出圈",
+        "社区大",
+        "插件丰富"
+      ],
+      "cons": [
+        "实际可用性一般",
+        "容易跑偏"
+      ]
+    },
+    {
+      "name": "LangChain / LangGraph",
+      "category": "open-source-framework",
+      "description": "LLM应用开发框架，支持构建Agent/链/RAG",
+      "nl_input": "通过代码定义NL→行动流程",
+      "nl_output": "编排LLM调用+工具调用",
+      "platform": "Python / JS SDK",
+      "pricing": "免费开源",
+      "open_source": true,
+      "github": "https://github.com/langchain-ai/langchain",
+      "pros": [
+        "生态最大",
+        "集成最全",
+        "文档好"
+      ],
+      "cons": [
+        "抽象层多",
+        "学习曲线",
+        "更新快"
+      ]
+    },
+    {
+      "name": "CrewAI",
+      "category": "open-source-framework",
+      "description": "多Agent协作框架，NL角色分工→多Agent协作完成复杂任务",
+      "nl_input": "定义Agent角色和目标",
+      "nl_output": "多Agent协作结果",
+      "platform": "Python SDK",
+      "pricing": "免费开源",
+      "open_source": true,
+      "github": "https://github.com/crewAIInc/crewAI",
+      "pros": [
+        "多Agent协作",
+        "角色化管理",
+        "简单API"
+      ],
+      "cons": [
+        "复杂场景有限",
+        "Agent间协调需调参"
+      ]
+    },
+    {
+      "name": "Open Interpreter",
+      "category": "open-source-framework",
+      "description": "NL→代码执行，本地运行Python/Shell",
+      "nl_input": "自然语言描述任务",
+      "nl_output": "自动写代码并执行",
+      "platform": "CLI / Python",
+      "pricing": "免费开源",
+      "open_source": true,
+      "github": "https://github.com/open-interpreter/open-interpreter",
+      "pros": [
+        "本地执行",
+        "可调各种LLM",
+        "灵活"
+      ],
+      "cons": [
+        "安全性需注意",
+        "需自行配置"
+      ]
+    },
+    {
+      "name": "DSPy",
+      "category": "open-source-framework",
+      "description": "编程式LLM应用框架，声明式NL程序",
+      "nl_input": "声明式定义程序模块",
+      "nl_output": "自动优化Prompt/调用LLM",
+      "platform": "Python SDK",
+      "pricing": "免费开源",
+      "open_source": true,
+      "github": "https://github.com/stanfordnlp/dspy",
+      "pros": [
+        "声明式编程",
+        "自动优化",
+        "斯坦福出品"
+      ],
+      "cons": [
+        "学习曲线陡",
+        "小众生态"
+      ]
+    },
+    {
+      "name": "OpenClaw (nanobot)",
+      "category": "open-source-framework",
+      "description": "开源本地AI Agent平台，Skill生态+工具调用",
+      "nl_input": "自然语言对话/任务描述",
+      "nl_output": "调用Skill执行任务",
+      "platform": "CLI / Server",
+      "pricing": "免费开源",
+      "open_source": true,
+      "github": "https://github.com/nanobot-ai/nanobot",
+      "pros": [
+        "本地私密",
+        "Skill生态",
+        "工具丰富"
+      ],
+      "cons": [
+        "社区较小",
+        "文档待完善"
+      ]
+    },
+    {
+      "id": "tool-48",
+      "name": "通义千问 (Qwen)",
+      "category": "code-generation",
+      "description": "阿里云推出的全能AI助手，支持代码生成、文档理解、多轮对话，深度整合阿里云生态",
+      "nl_input": "自然语言描述编程需求、上传文档提问",
+      "nl_output": "代码、文档摘要、数据分析报告",
+      "features": [
+        "代码生成",
+        "文档理解",
+        "多模态",
+        "阿里云生态集成",
+        "API调用"
+      ],
+      "price": "Freemium",
+      "open_source": true,
+      "github": "https://github.com/QwenLM/Qwen",
+      "website": "https://tongyi.aliyun.com",
+      "pros": [
+        "开源模型",
+        "中文理解强",
+        "阿里云深度集成",
+        "长上下文支持"
+      ],
+      "cons": [
+        "生态绑定阿里云",
+        "部分高级功能收费"
+      ]
+    },
+    {
+      "id": "tool-49",
+      "name": "Kimi (月之暗面)",
+      "category": "personal-assistant",
+      "description": "月之暗面推出的超长上下文AI助手，支持200万字上下文，擅长文档分析和长文写作",
+      "nl_input": "上传长文档/链接，自然语言提问分析",
+      "nl_output": "文档总结、长文写作、深度分析",
+      "features": [
+        "超长上下文",
+        "文件上传",
+        "链接阅读",
+        "长文写作",
+        "联网搜索"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://kimi.moonshot.cn",
+      "pros": [
+        "超长上下文领先",
+        "文档分析精准",
+        "中文体验好"
+      ],
+      "cons": [
+        "不公开模型",
+        "免费版有使用限制"
+      ]
+    },
+    {
+      "id": "tool-50",
+      "name": "DeepSeek",
+      "category": "code-generation",
+      "description": "深度求索推出的开源推理模型，以极低成本达到GPT-4级别性能，支持代码和数据科学",
+      "nl_input": "自然语言编程问题、数据分析需求",
+      "nl_output": "代码、推理过程、数据分析",
+      "features": [
+        "推理能力强",
+        "代码生成",
+        "开源模型",
+        "API接口",
+        "超低成本"
+      ],
+      "price": "Freemium",
+      "open_source": true,
+      "github": "https://github.com/deepseek-ai",
+      "website": "https://chat.deepseek.com",
+      "pros": [
+        "成本极低",
+        "开源可自部署",
+        "推理质量高",
+        "社区活跃"
+      ],
+      "cons": [
+        "不提供图像生成",
+        "服务器负载高峰可能慢"
+      ]
+    },
+    {
+      "id": "tool-51",
+      "name": "豆包 (字节跳动)",
+      "category": "personal-assistant",
+      "description": "字节跳动推出的AI助手，集成于抖音、飞书等产品生态，支持多模态交互",
+      "nl_input": "语音或文字提问、上传图片分析",
+      "nl_output": "文字回答、图片理解、语音合成",
+      "features": [
+        "多模态",
+        "语音交互",
+        "字节生态集成",
+        "图像理解",
+        "联网搜索"
+      ],
+      "price": "Free",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.doubao.com",
+      "pros": [
+        "完全免费",
+        "生态庞大",
+        "多模态能力强"
+      ],
+      "cons": [
+        "闭源",
+        "海外不可用"
+      ]
+    },
+    {
+      "id": "tool-52",
+      "name": "文心一言 (ERNIE Bot)",
+      "category": "content-writing",
+      "description": "百度推出的知识增强大语言模型，深度整合百度搜索和百度系产品",
+      "nl_input": "自然语言创作、分析、搜索请求",
+      "nl_output": "文章、诗歌、搜索增强回答、数据分析",
+      "features": [
+        "百度搜索增强",
+        "知识图谱",
+        "多模态",
+        "文生图",
+        "代码编写"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://yiyan.baidu.com",
+      "pros": [
+        "百度搜索整合",
+        "中文知识丰富",
+        "免费额度大"
+      ],
+      "cons": [
+        "海外受限",
+        "依赖百度生态"
+      ]
+    },
+    {
+      "id": "tool-53",
+      "name": "智谱清言 (ChatGLM)",
+      "category": "code-generation",
+      "description": "智谱AI基于GLM架构的双语AI助手，擅长代码和学术写作",
+      "nl_input": "中英双语编程、学术提问",
+      "nl_output": "代码、学术论文、双语翻译",
+      "features": [
+        "双语优势",
+        "开源模型GLM",
+        "学术写作",
+        "代码生成",
+        "API接口"
+      ],
+      "price": "Freemium",
+      "open_source": true,
+      "github": "https://github.com/THUDM/ChatGLM-6B",
+      "website": "https://chatglm.cn",
+      "pros": [
+        "开源模型可用",
+        "中英双语好",
+        "学术能力佳"
+      ],
+      "cons": [
+        "长文本有时不稳定",
+        "生态规模小于阿里/百度"
+      ]
+    },
+    {
+      "id": "tool-54",
+      "name": "讯飞星火",
+      "category": "industry-specific",
+      "description": "科大讯飞推出的认知大模型，整合语音识别、语音合成等讯飞核心技术",
+      "nl_input": "语音或文字输入",
+      "nl_output": "文字回答、语音合成、教育评估",
+      "features": [
+        "语音识别",
+        "语音合成",
+        "教育批改",
+        "多语种",
+        "讯飞生态"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://xinghuo.xfyun.cn",
+      "pros": [
+        "语音技术领先",
+        "教育场景强",
+        "多语种支持"
+      ],
+      "cons": [
+        "纯文字推理不如GPT",
+        "生态偏垂直"
+      ]
+    },
+    {
+      "id": "tool-55",
+      "name": "秘塔AI搜索",
+      "category": "search-knowledge",
+      "description": "秘塔科技推出的AI搜索引擎，支持深度搜索、无广告、结构化答案",
+      "nl_input": "自然语言搜索查询",
+      "nl_output": "结构化答案、思维导图、来源引用",
+      "features": [
+        "无广告",
+        "深度搜索",
+        "思维导图",
+        "大纲生成",
+        "来源引用"
+      ],
+      "price": "Free",
+      "open_source": false,
+      "github": null,
+      "website": "https://metaso.cn",
+      "pros": [
+        "完全免费",
+        "搜索结果干净",
+        "结构化输出",
+        "学术搜索好"
+      ],
+      "cons": [
+        "仅中文互联网范围",
+        "不支持图片搜索"
+      ]
+    },
+    {
+      "id": "tool-56",
+      "name": "天工AI (昆仑万维)",
+      "category": "search-knowledge",
+      "description": "昆仑万维推出的全能AI，集搜索、写作、编程、绘画于一体",
+      "nl_input": "自然语言搜索或创作请求",
+      "nl_output": "搜索答案、代码、文章、AI绘画",
+      "features": [
+        "AI搜索",
+        "代码编写",
+        "AI绘画",
+        "文档处理",
+        "音乐生成"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.tiangong.cn",
+      "pros": [
+        "一专多能",
+        "AI绘画质量好",
+        "免费额度大"
+      ],
+      "cons": [
+        "闭源",
+        "海外不可用"
+      ]
+    },
+    {
+      "id": "tool-57",
+      "name": "MiniMax (海螺AI)",
+      "category": "design-creative",
+      "description": "MiniMax推出的AI助手，文本和语音交互体验出色",
+      "nl_input": "文字对话、语音输入",
+      "nl_output": "回答、语音合成、故事生成",
+      "features": [
+        "高质量语音",
+        "故事生成",
+        "多模态",
+        "对话自然"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://hailuoai.com",
+      "pros": [
+        "语音体验顶级",
+        "对话自然流畅"
+      ],
+      "cons": [
+        "文本推理一般",
+        "功能相对单一"
+      ]
+    },
+    {
+      "id": "tool-58",
+      "name": "百川智能",
+      "category": "personal-assistant",
+      "description": "百川智能推出的大模型产品，专注中英文对话",
+      "nl_input": "自然语言提问",
+      "nl_output": "回答、搜索增强",
+      "features": [
+        "中英双语",
+        "搜索增强",
+        "开源模型Baichuan"
+      ],
+      "price": "Freemium",
+      "open_source": true,
+      "github": "https://github.com/baichuan-inc",
+      "website": "https://www.baichuan-ai.com",
+      "pros": [
+        "开源模型可选",
+        "中文基础好"
+      ],
+      "cons": [
+        "生态较小",
+        "知名度不如竞品"
+      ]
+    },
+    {
+      "id": "tool-59",
+      "name": "零一万物 (Yi)",
+      "category": "personal-assistant",
+      "description": "李开复创立的零一万物推出的Yi系列模型，开源可商用",
+      "nl_input": "中英双语提问",
+      "nl_output": "回答、代码",
+      "features": [
+        "开源可商用",
+        "性能均衡",
+        "中英双语"
+      ],
+      "price": "Freemium",
+      "open_source": true,
+      "github": "https://github.com/01-ai/Yi",
+      "website": "https://www.lingyiwanwu.com",
+      "pros": [
+        "开源可商用",
+        "模型质量好"
+      ],
+      "cons": [
+        "产品形态单一",
+        "无自有聊天应用"
+      ]
+    },
+    {
+      "id": "tool-60",
+      "name": "腾讯混元",
+      "category": "industry-specific",
+      "description": "腾讯自研大模型，深度整合微信、QQ、腾讯会议等产品",
+      "nl_input": "自然语言交互、企业协作场景",
+      "nl_output": "文本、代码、会议纪要、图片理解",
+      "features": [
+        "腾讯生态整合",
+        "微信集成",
+        "会议纪要",
+        "多模态"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://hunyuan.tencent.com",
+      "pros": [
+        "微信生态优势",
+        "腾讯产品集成",
+        "企业场景"
+      ],
+      "cons": [
+        "闭源",
+        "对外开放程度有限"
+      ]
+    },
+    {
+      "id": "tool-61",
+      "name": "Devin",
+      "category": "code-generation",
+      "description": "Cognition AI推出的首个AI软件工程师，可独立完成端到端开发任务",
+      "nl_input": "自然语言描述软件开发需求",
+      "nl_output": "完整代码项目、PR、部署",
+      "features": [
+        "端到端开发",
+        "调试修复",
+        "部署",
+        "PR管理",
+        "IDE插件"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": "https://github.com/cognition-labs",
+      "website": "https://www.cognition.ai",
+      "pros": [
+        "自主开发能力强",
+        "端到端交付",
+        "节省大量时间"
+      ],
+      "cons": [
+        "每月$500起",
+        "不适用于简单任务",
+        "排队等候"
+      ]
+    },
+    {
+      "id": "tool-62",
+      "name": "Aider",
+      "category": "code-generation",
+      "description": "开源AI结对编程工具，在终端中用自然语言修改代码",
+      "nl_input": "自然语言描述代码修改需求",
+      "nl_output": "自动编辑代码文件、生成commit",
+      "features": [
+        "终端内使用",
+        "Git集成",
+        "多模型支持",
+        "自动commit",
+        "代码diff"
+      ],
+      "price": "Free",
+      "open_source": true,
+      "github": "https://github.com/paul-gauthier/aider",
+      "website": "https://aider.chat",
+      "pros": [
+        "完全免费",
+        "Git原生集成",
+        "支持多种LLM",
+        "轻量高效"
+      ],
+      "cons": [
+        "需自己配置API key",
+        "终端界面不友好"
+      ]
+    },
+    {
+      "id": "tool-63",
+      "name": "Sourcegraph Cody",
+      "category": "code-generation",
+      "description": "Sourcegraph推出的代码AI助手，基于代码库上下文理解",
+      "nl_input": "自然语言问代码库相关问题",
+      "nl_output": "代码解释、重构、修复建议",
+      "features": [
+        "代码库级理解",
+        "上下文感知",
+        "代码搜索",
+        "自动补全",
+        "IDE插件"
+      ],
+      "price": "Freemium",
+      "open_source": true,
+      "github": "https://github.com/sourcegraph/cody",
+      "website": "https://sourcegraph.com/cody",
+      "pros": [
+        "代码库级上下文",
+        "开源",
+        "IDE集成好"
+      ],
+      "cons": [
+        "免费版有限制",
+        "大项目可能慢"
+      ]
+    },
+    {
+      "id": "tool-64",
+      "name": "Tabnine",
+      "category": "code-generation",
+      "description": "AI代码补全工具，注重隐私和本地部署",
+      "nl_input": "在IDE中自然书写时自动补全",
+      "nl_output": "代码补全建议",
+      "features": [
+        "本地部署",
+        "隐私优先",
+        "多IDE支持",
+        "团队训练"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.tabnine.com",
+      "pros": [
+        "可本地部署",
+        "隐私保护好",
+        "支持多语言"
+      ],
+      "cons": [
+        "补全质量不如Copilot",
+        "企业版贵"
+      ]
+    },
+    {
+      "id": "tool-65",
+      "name": "Sweep AI",
+      "category": "code-generation",
+      "description": "AI驱动的代码维护助手，可自动修复GitHub issues",
+      "nl_input": "在GitHub issue中描述Bug或需求",
+      "nl_output": "自动提交PR修复问题",
+      "features": [
+        "GitHub集成",
+        "自动PR",
+        "代码修复",
+        "重构"
+      ],
+      "price": "Freemium",
+      "open_source": true,
+      "github": "https://github.com/sweepai/sweep",
+      "website": "https://sweep.dev",
+      "pros": [
+        "自动生成PR",
+        "免费开源",
+        "GitHub深度集成"
+      ],
+      "cons": [
+        "复杂改动不稳定",
+        "仅支持Python/TS"
+      ]
+    },
+    {
+      "id": "tool-66",
+      "name": "Poolside",
+      "category": "code-generation",
+      "description": "专为软件工程训练的AI模型，在代码生成和推理方面有独特优势",
+      "nl_input": "自然语言开发需求",
+      "nl_output": "高质量代码、架构设计",
+      "features": [
+        "专用代码模型",
+        "架构设计",
+        "企业部署",
+        "API"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://poolside.ai",
+      "pros": [
+        "代码质量高",
+        "大规模企业支持"
+      ],
+      "cons": [
+        "仅企业付费",
+        "不公开可试用"
+      ]
+    },
+    {
+      "id": "tool-67",
+      "name": "Amazon CodeWhisperer",
+      "category": "code-generation",
+      "description": "AWS推出的免费AI代码助手，内置安全扫描",
+      "nl_input": "IDE中自然书写代码",
+      "nl_output": "代码补全、安全扫描建议",
+      "features": [
+        "免费",
+        "安全扫描",
+        "AWS集成",
+        "多IDE插件",
+        "引用追踪"
+      ],
+      "price": "Free",
+      "open_source": false,
+      "github": null,
+      "website": "https://aws.amazon.com/codewhisperer/",
+      "pros": [
+        "完全免费",
+        "安全扫描内置",
+        "AWS生态",
+        "支持多语言"
+      ],
+      "cons": [
+        "不如Copilot智能",
+        "偏向AWS生态"
+      ]
+    },
+    {
+      "id": "tool-68",
+      "name": "GPT-Engineer",
+      "category": "code-generation",
+      "description": "开源工具，用自然语言描述整个应用，自动生成完整代码库",
+      "nl_input": "用自然语言描述想构建的应用",
+      "nl_output": "完整代码项目",
+      "features": [
+        "一次性生成",
+        "完整项目",
+        "代码生成",
+        "终端工具"
+      ],
+      "price": "Free",
+      "open_source": true,
+      "github": "https://github.com/gpt-engineer-org/gpt-engineer",
+      "website": "https://gptengineer.app",
+      "pros": [
+        "开源免费",
+        "快速原型",
+        "社区活跃"
+      ],
+      "cons": [
+        "生产级质量一般",
+        "大型项目不行"
+      ]
+    },
+    {
+      "id": "tool-69",
+      "name": "CodeRabbit",
+      "category": "code-generation",
+      "description": "AI代码审查工具，自动审查PR并提供改进建议",
+      "nl_input": "自动扫描PR变更",
+      "nl_output": "代码审查评论、建议",
+      "features": [
+        "自动PR审查",
+        "建议生成",
+        "多平台集成",
+        "摘要生成"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://coderabbit.ai",
+      "pros": [
+        "自动节省审查时间",
+        "各大Git平台支持"
+      ],
+      "cons": [
+        "付费",
+        "有时误报"
+      ]
+    },
+    {
+      "id": "tool-70",
+      "name": "UiPath AI",
+      "category": "workflow-automation",
+      "description": "RPA巨头UiPath的AI机器人流程自动化平台",
+      "nl_input": "自然语言描述业务流程",
+      "nl_output": "自动化工作流、RPA机器人",
+      "features": [
+        "RPA",
+        "低代码",
+        "AI决策",
+        "企业级"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.uipath.com",
+      "pros": [
+        "企业级RPA",
+        "AI能力增强",
+        "大规模部署"
+      ],
+      "cons": [
+        "价格高",
+        "学习曲线陡"
+      ]
+    },
+    {
+      "id": "tool-71",
+      "name": "Bardeen",
+      "category": "workflow-automation",
+      "description": "AI驱动的浏览器自动化工具，一键执行重复任务",
+      "nl_input": "自然语言描述重复操作",
+      "nl_output": "浏览器自动化执行",
+      "features": [
+        "浏览器内运行",
+        "模板丰富",
+        "AI建议",
+        "无代码"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.bardeen.ai",
+      "pros": [
+        "浏览器插件轻量",
+        "模板多",
+        "入门快"
+      ],
+      "cons": [
+        "仅限浏览器操作",
+        "复杂流程受限"
+      ]
+    },
+    {
+      "id": "tool-72",
+      "name": "Pipedream",
+      "category": "workflow-automation",
+      "description": "面向开发者的工作流自动化平台，代码+无代码混合",
+      "nl_input": "自然语言描述集成逻辑",
+      "nl_output": "自动化工作流、API集成",
+      "features": [
+        "代码+低代码",
+        "API集成",
+        "定时触发",
+        "1500+连接器"
+      ],
+      "price": "Freemium",
+      "open_source": true,
+      "github": "https://github.com/PipedreamHQ/pipedream",
+      "website": "https://pipedream.com",
+      "pros": [
+        "开源",
+        "开发者友好",
+        "免费额度大"
+      ],
+      "cons": [
+        "非技术用户门槛高",
+        "中文支持弱"
+      ]
+    },
+    {
+      "id": "tool-73",
+      "name": "Relay.app",
+      "category": "workflow-automation",
+      "description": "新型自动化平台，AI+人工协作混合工作流",
+      "nl_input": "自然语言描述自动化流程",
+      "nl_output": "工作流自动化执行、人工干预节点",
+      "features": [
+        "AI+人工混合",
+        "团队协作",
+        "多步骤流程",
+        "模板"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://relay.app",
+      "pros": [
+        "人机协作设计好",
+        "团队友好"
+      ],
+      "cons": [
+        "新兴平台",
+        "集成数较少"
+      ]
+    },
+    {
+      "id": "tool-74",
+      "name": "Tray.ai",
+      "category": "workflow-automation",
+      "description": "企业级AI集成平台，连接数百种SaaS工具",
+      "nl_input": "自然语言描述业务流程",
+      "nl_output": "企业级工作流自动化",
+      "features": [
+        "企业级",
+        "500+连接器",
+        "AI编排",
+        "低代码"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://tray.ai",
+      "pros": [
+        "企业级功能",
+        "连接器丰富",
+        "安全合规"
+      ],
+      "cons": [
+        "价格高",
+        "不适合个人"
+      ]
+    },
+    {
+      "id": "tool-75",
+      "name": "Automation Anywhere",
+      "category": "workflow-automation",
+      "description": "RPA领导者之一，AI+自动化融合平台",
+      "nl_input": "自然语言描述流程、上传文档指导",
+      "nl_output": "RPA机器人、文档处理、AI决策",
+      "features": [
+        "RPA",
+        "AI文档",
+        "企业部署",
+        "低代码"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.automationanywhere.com",
+      "pros": [
+        "RPA巨头",
+        "AI能力",
+        "合作伙伴多"
+      ],
+      "cons": [
+        "价格高",
+        "主要面向企业"
+      ]
+    },
+    {
+      "id": "tool-76",
+      "name": "ChatPDF",
+      "category": "document-processing",
+      "description": "AI驱动的PDF分析工具，上传即可与文档对话",
+      "nl_input": "上传PDF提问",
+      "nl_output": "文档摘要、问答、引用",
+      "features": [
+        "PDF对话",
+        "多文档",
+        "引用追踪",
+        "多语言"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.chatpdf.com",
+      "pros": [
+        "简单易用",
+        "免费额度",
+        "多文档支持"
+      ],
+      "cons": [
+        "仅限PDF",
+        "免费版有限制"
+      ]
+    },
+    {
+      "id": "tool-77",
+      "name": "Docugami",
+      "category": "document-processing",
+      "description": "AI商业文档智能解析，自动提取结构化数据",
+      "nl_input": "上传商业文档",
+      "nl_output": "结构化XML数据、合同要素",
+      "features": [
+        "文档结构化",
+        "XML输出",
+        "企业级",
+        "合同分析"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.docugami.com",
+      "pros": [
+        "企业级文档处理",
+        "结构化输出精确"
+      ],
+      "cons": [
+        "价格高",
+        "仅英文文档"
+      ]
+    },
+    {
+      "id": "tool-78",
+      "name": "Humata AI",
+      "category": "document-processing",
+      "description": "AI论文/文档分析工具，即时问答",
+      "nl_input": "上传PDF/文档提问",
+      "nl_output": "即时PDF问答、摘要",
+      "features": [
+        "PDF问答",
+        "多文档",
+        "引用高亮",
+        "团队协作"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.humata.ai",
+      "pros": [
+        "AI问答速度快",
+        "界面友好"
+      ],
+      "cons": [
+        "免费版页数有限",
+        "不支持中文"
+      ]
+    },
+    {
+      "id": "tool-79",
+      "name": "Unstructured.io",
+      "category": "document-processing",
+      "description": "开源非结构化数据处理框架，将任意文档转为AI可读格式",
+      "nl_input": "上传任意格式文档",
+      "nl_output": "结构化JSON、Markdown",
+      "features": [
+        "40+格式支持",
+        "开源",
+        "API",
+        "预处理管线"
+      ],
+      "price": "Freemium",
+      "open_source": true,
+      "github": "https://github.com/Unstructured-IO/unstructured",
+      "website": "https://unstructured.io",
+      "pros": [
+        "格式支持广",
+        "开源可自部署",
+        "预处理强大"
+      ],
+      "cons": [
+        "需要技术能力",
+        "API按量付费"
+      ]
+    },
+    {
+      "id": "tool-80",
+      "name": "Adobe Acrobat AI",
+      "category": "document-processing",
+      "description": "Adobe Acrobat内置的AI助手，PDF编辑与AI分析一体",
+      "nl_input": "在PDF中提问、要求总结",
+      "nl_output": "总结、问答、格式转换",
+      "features": [
+        "PDF内嵌AI",
+        "Adobe生态",
+        "合同分析",
+        "OCR"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.adobe.com/acrobat.html",
+      "pros": [
+        "Adobe生态整合",
+        "PDF编辑+AI一体"
+      ],
+      "cons": [
+        "订阅收费",
+        "仅PDF"
+      ]
+    },
+    {
+      "id": "tool-81",
+      "name": "PDF.ai",
+      "category": "document-processing",
+      "description": "与任何PDF文件对话的AI工具",
+      "nl_input": "上传PDF提问",
+      "nl_output": "答案、摘要、数据提取",
+      "features": [
+        "PDF对话",
+        "批量处理",
+        "API",
+        "Chrome插件"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://pdf.ai",
+      "pros": [
+        "简单好用",
+        "Chrome插件方便"
+      ],
+      "cons": [
+        "仅PDF",
+        "免费版限制"
+      ]
+    },
+    {
+      "id": "tool-82",
+      "name": "GitBook AI",
+      "category": "document-processing",
+      "description": "GitBook的AI写作和文档助手，团队知识库管理",
+      "nl_input": "自然语言写文档、搜索知识库",
+      "nl_output": "文档、知识库、API文档",
+      "features": [
+        "团队协作",
+        "知识库",
+        "API文档",
+        "AI写作"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.gitbook.com",
+      "pros": [
+        "团队知识库好",
+        "开发者友好"
+      ],
+      "cons": [
+        "偏向技术文档",
+        "高级功能付费"
+      ]
+    },
+    {
+      "id": "tool-83",
+      "name": "Tableau AI (Einstein)",
+      "category": "data-analysis",
+      "description": "Tableau集成的Salesforce Einstein AI分析",
+      "nl_input": "自然语言提问数据洞察",
+      "nl_output": "可视化图表、数据洞察、预测",
+      "features": [
+        "自然语言查询",
+        "自动可视化",
+        "预测分析",
+        "Salesforce生态"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.tableau.com",
+      "pros": [
+        "可视化顶级",
+        "企业部署",
+        "Salesforce集成"
+      ],
+      "cons": [
+        "价格高",
+        "学习曲线"
+      ]
+    },
+    {
+      "id": "tool-84",
+      "name": "Hex",
+      "category": "data-analysis",
+      "description": "协作式数据科学笔记本，AI辅助分析",
+      "nl_input": "自然语言分析需求",
+      "nl_output": "数据可视化、SQL/Python代码、报告",
+      "features": [
+        "协作笔记本",
+        "SQL+Python",
+        "AI辅助",
+        "可视化",
+        "版本控制"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://hex.tech",
+      "pros": [
+        "协作体验好",
+        "AI辅助写代码"
+      ],
+      "cons": [
+        "付费团队版",
+        "非数据分析师门槛"
+      ]
+    },
+    {
+      "id": "tool-85",
+      "name": "Rows",
+      "category": "data-analysis",
+      "description": "AI驱动的电子表格，集成AI分析和自动化",
+      "nl_input": "自然语言描述表格操作",
+      "nl_output": "数据分析、图表、自动化",
+      "features": [
+        "AI电子表格",
+        "API集成",
+        "自动图表",
+        "模板"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://rows.com",
+      "pros": [
+        "AI表格体验好",
+        "API集成方便"
+      ],
+      "cons": [
+        "生态不如Excel",
+        "高级功能付费"
+      ]
+    },
+    {
+      "id": "tool-86",
+      "name": "Akkio",
+      "category": "data-analysis",
+      "description": "无代码AI数据分析平台，拖拽式预测建模",
+      "nl_input": "上传数据、选择预测目标",
+      "nl_output": "预测模型、图表、洞察",
+      "features": [
+        "无代码ML",
+        "预测建模",
+        "自动特征工程",
+        "实时预测"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.akkio.com",
+      "pros": [
+        "完全无代码",
+        "上手快"
+      ],
+      "cons": [
+        "仅限表格数据",
+        "深度学习不支持"
+      ]
+    },
+    {
+      "id": "tool-87",
+      "name": "Seek AI",
+      "category": "data-analysis",
+      "description": "自然语言查询数据库，自动生成SQL",
+      "nl_input": "自然语言数据查询",
+      "nl_output": "SQL查询、数据结果、可视化",
+      "features": [
+        "NL2SQL",
+        "多数据库支持",
+        "自动SQL",
+        "数据安全"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.seek.ai",
+      "pros": [
+        "SQL生成准确",
+        "数据安全"
+      ],
+      "cons": [
+        "仅企业付费",
+        "依赖数据仓库"
+      ]
+    },
+    {
+      "id": "tool-88",
+      "name": "DALL-E 3",
+      "category": "design-creative",
+      "description": "OpenAI的文生图模型，可通过ChatGPT自然语言生成图像",
+      "nl_input": "自然语言描述想要的图像",
+      "nl_output": "高质量AI图像",
+      "features": [
+        "ChatGPT集成",
+        "高分辨率",
+        "风格多样",
+        "文字渲染"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://openai.com/dall-e-3",
+      "pros": [
+        "图像质量高",
+        "ChatGPT联动",
+        "文字渲染好"
+      ],
+      "cons": [
+        "需ChatGPT Plus",
+        "不可商用"
+      ]
+    },
+    {
+      "id": "tool-89",
+      "name": "Stable Diffusion",
+      "category": "design-creative",
+      "description": "Stability AI的开源文生图模型，可本地部署",
+      "nl_input": "自然语言图像描述",
+      "nl_output": "AI生成图像",
+      "features": [
+        "开源",
+        "本地部署",
+        "海量模型",
+        "ControlNet"
+      ],
+      "price": "Free",
+      "open_source": true,
+      "github": "https://github.com/Stability-AI/generative-models",
+      "website": "https://stability.ai",
+      "pros": [
+        "完全开源",
+        "社区模型丰富",
+        "可商用",
+        "本地运行"
+      ],
+      "cons": [
+        "需要技术能力",
+        "需高端GPU"
+      ]
+    },
+    {
+      "id": "tool-90",
+      "name": "Leonardo AI",
+      "category": "design-creative",
+      "description": "游戏和设计行业的AI图像生成平台",
+      "nl_input": "自然语言或参考图生成",
+      "nl_output": "游戏资产、概念图、3D纹理",
+      "features": [
+        "游戏资产生成",
+        "概念艺术",
+        "风格控制",
+        "团队协作"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://leonardo.ai",
+      "pros": [
+        "游戏行业优化好",
+        "风格控制强"
+      ],
+      "cons": [
+        "免费版限制",
+        "不如MJ真实感"
+      ]
+    },
+    {
+      "id": "tool-91",
+      "name": "Pika Labs",
+      "category": "design-creative",
+      "description": "AI短视频生成工具，文字/图片转视频",
+      "nl_input": "文字描述或上传图片",
+      "nl_output": "AI短视频（3-10秒）",
+      "features": [
+        "文生视频",
+        "图生视频",
+        "视频编辑",
+        "风格化"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://pika.art",
+      "pros": [
+        "视频生成快",
+        "创意效果好"
+      ],
+      "cons": [
+        "时长有限",
+        "价格较高"
+      ]
+    },
+    {
+      "id": "tool-92",
+      "name": "Kling (可灵AI)",
+      "category": "design-creative",
+      "description": "快手推出的文生视频大模型，生成质量领先",
+      "nl_input": "中文自然语言描述场景",
+      "nl_output": "高质量AI视频（最长2分钟）",
+      "features": [
+        "文生视频",
+        "图生视频",
+        "长时长",
+        "物理一致性"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://klingai.com",
+      "pros": [
+        "视频质量领先",
+        "中文支持好",
+        "时长长"
+      ],
+      "cons": [
+        "排队等待",
+        "免费额度有限"
+      ]
+    },
+    {
+      "id": "tool-93",
+      "name": "Haiper AI",
+      "category": "design-creative",
+      "description": "由前DeepMind成员创建的AI视频生成平台",
+      "nl_input": "文字或图片生成视频",
+      "nl_output": "AI视频、动画",
+      "features": [
+        "文生视频",
+        "图生视频",
+        "视频修复",
+        "风格迁移"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.haiper.ai",
+      "pros": [
+        "免费额度大",
+        "视频风格多样"
+      ],
+      "cons": [
+        "分辨率一般",
+        "新平台"
+      ]
+    },
+    {
+      "id": "tool-94",
+      "name": "ElevenLabs",
+      "category": "voice-conversation",
+      "description": "AI语音合成和克隆的行业标杆",
+      "nl_input": "输入文字、选择声音",
+      "nl_output": "自然语音、声音克隆、多语种配音",
+      "features": [
+        "声音克隆",
+        "多语种",
+        "语音合成",
+        "API",
+        "情感控制"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://elevenlabs.io",
+      "pros": [
+        "语音质量顶级",
+        "声音克隆精准",
+        "API好"
+      ],
+      "cons": [
+        "免费版有限制",
+        "中文口音偶不自然"
+      ]
+    },
+    {
+      "id": "tool-95",
+      "name": "Synthesia",
+      "category": "design-creative",
+      "description": "AI数字人视频生成平台，无需拍摄即可制作专业视频",
+      "nl_input": "输入脚本选择AI主播",
+      "nl_output": "AI数字人讲演视频",
+      "features": [
+        "AI数字人",
+        "多语种",
+        "模板丰富",
+        "企业培训"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.synthesia.io",
+      "pros": [
+        "无需真人拍摄",
+        "多语种",
+        "企业培训场景好"
+      ],
+      "cons": [
+        "价格较高",
+        "AI人偶表情"
+      ]
+    },
+    {
+      "id": "tool-96",
+      "name": "HeyGen",
+      "category": "design-creative",
+      "description": "AI数字人和视频翻译工具",
+      "nl_input": "上传视频或输入文字",
+      "nl_output": "数字人视频、视频翻译、口型同步",
+      "features": [
+        "数字人",
+        "视频翻译",
+        "口型同步",
+        "API"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.heygen.com",
+      "pros": [
+        "口型同步好",
+        "视频翻译实用"
+      ],
+      "cons": [
+        "免费版有水印",
+        "高级功能贵"
+      ]
+    },
+    {
+      "id": "tool-97",
+      "name": "Descript",
+      "category": "design-creative",
+      "description": "AI驱动的音视频编辑工具，像编辑文档一样编辑视频",
+      "nl_input": "编辑文本自动编辑对应视频",
+      "nl_output": "视频编辑、语音合成、字幕",
+      "features": [
+        "文本式编辑",
+        "AI语音",
+        "自动字幕",
+        "屏幕录制"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.descript.com",
+      "pros": [
+        "编辑革命性",
+        "自动字幕好"
+      ],
+      "cons": [
+        "免费版功能少",
+        "AI语音不完美"
+      ]
+    },
+    {
+      "id": "tool-98",
+      "name": "CapCut AI (剪映)",
+      "category": "design-creative",
+      "description": "字节跳动旗下AI视频编辑工具，AI功能丰富",
+      "nl_input": "自然语言描述特效、自动剪辑",
+      "nl_output": "AI剪辑、特效、字幕、数字人",
+      "features": [
+        "AI剪辑",
+        "自动字幕",
+        "数字人",
+        "特效"
+      ],
+      "price": "Free",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.capcut.cn",
+      "pros": [
+        "完全免费核心功能",
+        "AI功能强大",
+        "模板丰富"
+      ],
+      "cons": [
+        "移动端为主",
+        "高级AI需订阅"
+      ]
+    },
+    {
+      "id": "tool-99",
+      "name": "Hume AI",
+      "category": "voice-conversation",
+      "description": "情感AI对话平台，能理解人类情绪的语气和语调",
+      "nl_input": "语音对话/文字输入",
+      "nl_output": "情感感知回答、情绪分析",
+      "features": [
+        "情感识别",
+        "语音交互",
+        "API",
+        "共情对话"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://hume.ai",
+      "pros": [
+        "情感感知领先",
+        "语音自然"
+      ],
+      "cons": [
+        "文本能力一般",
+        "API需付费"
+      ]
+    },
+    {
+      "id": "tool-100",
+      "name": "Character AI",
+      "category": "voice-conversation",
+      "description": "与AI角色进行自然对话的平台",
+      "nl_input": "任意角色描述或选择预设角色",
+      "nl_output": "角色对话",
+      "features": [
+        "角色创建",
+        "群聊",
+        "多角色",
+        "语音"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://character.ai",
+      "pros": [
+        "角色对话自然",
+        "社区角色丰富",
+        "免费"
+      ],
+      "cons": [
+        "角色幻觉",
+        "不适合严肃任务"
+      ]
+    },
+    {
+      "id": "tool-101",
+      "name": "Bland AI",
+      "category": "voice-conversation",
+      "description": "AI电话助手，可自动拨打电话完成各种任务",
+      "nl_input": "自然语言描述通话目的",
+      "nl_output": "电话接通、对话、完成任务",
+      "features": [
+        "自动拨号",
+        "电话对话",
+        "任务执行",
+        "API"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.bland.ai",
+      "pros": [
+        "电话能力独特",
+        "API易集成"
+      ],
+      "cons": [
+        "仅电话",
+        "价格按分钟计"
+      ]
+    },
+    {
+      "id": "tool-102",
+      "name": "Vapi",
+      "category": "voice-conversation",
+      "description": "开发者AI语音Agent构建平台",
+      "nl_input": "API配置语音Agent行为",
+      "nl_output": "语音AI Agent",
+      "features": [
+        "语音Agent",
+        "API",
+        "WebSocket",
+        "多模型"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://vapi.ai",
+      "pros": [
+        "开发者友好",
+        "灵活配置"
+      ],
+      "cons": [
+        "需要编程",
+        "仅语音"
+      ]
+    },
+    {
+      "id": "tool-103",
+      "name": "Retell AI",
+      "category": "voice-conversation",
+      "description": "实时AI语音对话API，低延迟语音交互",
+      "nl_input": "API调用，配置对话逻辑",
+      "nl_output": "实时语音对话",
+      "features": [
+        "低延迟",
+        "自然打断",
+        "多语言",
+        "API"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.retellai.com",
+      "pros": [
+        "延迟极低",
+        "打断自然"
+      ],
+      "cons": [
+        "需要开发",
+        "价格按分钟"
+      ]
+    },
+    {
+      "id": "tool-104",
+      "name": "Replika",
+      "category": "voice-conversation",
+      "description": "AI陪聊伴侣，支持文字和语音对话",
+      "nl_input": "日常对话",
+      "nl_output": "情感陪伴、对话",
+      "features": [
+        "情感陪伴",
+        "语音通话",
+        "AR",
+        "记忆"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://replika.ai",
+      "pros": [
+        "情感连接好",
+        "长期记忆"
+      ],
+      "cons": [
+        "专业性不足",
+        "高级功能付费"
+      ]
+    },
+    {
+      "id": "tool-105",
+      "name": "Perplexity AI",
+      "category": "search-knowledge",
+      "description": "AI驱动的搜索引擎，实时检索并给出引用来源",
+      "nl_input": "自然语言搜索问题",
+      "nl_output": "带引用的综合答案",
+      "features": [
+        "实时搜索",
+        "引用来源",
+        "多源整合",
+        "Copilot追问"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.perplexity.ai",
+      "pros": [
+        "答案有据可查",
+        "实时性高",
+        "界面简洁"
+      ],
+      "cons": [
+        "Pro版付费",
+        "深度不如专用工具"
+      ]
+    },
+    {
+      "id": "tool-106",
+      "name": "You.com",
+      "category": "search-knowledge",
+      "description": "AI搜索引擎，注重隐私和个性化",
+      "nl_input": "自然语言搜索",
+      "nl_output": "AI摘要+传统搜索结果",
+      "features": [
+        "隐私优先",
+        "AI摘要",
+        "个性化",
+        "多模式"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://you.com",
+      "pros": [
+        "隐私保护好",
+        "AI+传统搜索融合"
+      ],
+      "cons": [
+        "知名度不如Perplexity",
+        "深度一般"
+      ]
+    },
+    {
+      "id": "tool-107",
+      "name": "Phind",
+      "category": "search-knowledge",
+      "description": "面向开发者的AI搜索，专注技术问答",
+      "nl_input": "编程技术问题",
+      "nl_output": "代码、技术解答、文档引用",
+      "features": [
+        "技术专注",
+        "代码导向",
+        "引用链接",
+        "实时搜索"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.phind.com",
+      "pros": [
+        "技术问答好",
+        "开发者最爱"
+      ],
+      "cons": [
+        "非技术问题一般",
+        "免费版有限"
+      ]
+    },
+    {
+      "id": "tool-108",
+      "name": "Exa",
+      "category": "search-knowledge",
+      "description": "AI原生搜索引擎API，专为AI应用设计的内容检索",
+      "nl_input": "语义搜索查询",
+      "nl_output": "相关网页内容、嵌入向量",
+      "features": [
+        "语义搜索",
+        "内容检索",
+        "API",
+        "嵌入"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://exa.ai",
+      "pros": [
+        "语义搜索精准",
+        "API好"
+      ],
+      "cons": [
+        "仅API",
+        "需付费"
+      ]
+    },
+    {
+      "id": "tool-109",
+      "name": "Tavily",
+      "category": "search-knowledge",
+      "description": "专为AI Agent设计的搜索API",
+      "nl_input": "搜索查询",
+      "nl_output": "结构化搜索结果、摘要",
+      "features": [
+        "AI Agent优化",
+        "实时搜索",
+        "API",
+        "结构化输出"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://tavily.com",
+      "pros": [
+        "AI Agent定制",
+        "结果结构好"
+      ],
+      "cons": [
+        "仅API形式",
+        "免费额度少"
+      ]
+    },
+    {
+      "id": "tool-110",
+      "name": "Bloomberg GPT",
+      "category": "finance-investment",
+      "description": "Bloomberg训练的金融领域大模型",
+      "nl_input": "金融数据查询、分析需求",
+      "nl_output": "财务分析、市场洞察",
+      "features": [
+        "金融专训",
+        "Bloomberg数据",
+        "风险分析",
+        "合规"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.bloomberg.com/company/press/bloomberggpt/",
+      "pros": [
+        "金融专业最强",
+        "Bloomberg数据"
+      ],
+      "cons": [
+        "仅企业",
+        "价格极高"
+      ]
+    },
+    {
+      "id": "tool-111",
+      "name": "FinChat",
+      "category": "finance-investment",
+      "description": "AI投资研究助手，覆盖全球上市公司数据",
+      "nl_input": "自然语言查询公司财务数据",
+      "nl_output": "财务指标、财报分析、投资观点",
+      "features": [
+        "公司数据",
+        "财报分析",
+        "可视化",
+        "投资观点"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://finchat.io",
+      "pros": [
+        "财务数据全",
+        "可视化好"
+      ],
+      "cons": [
+        "付费才能访问完整数据"
+      ]
+    },
+    {
+      "id": "tool-112",
+      "name": "AlphaSense",
+      "category": "finance-investment",
+      "description": "AI驱动的市场情报和投资研究平台",
+      "nl_input": "自然语言搜索市场信息",
+      "nl_output": "研究报告、行业分析、市场情报",
+      "features": [
+        "市场情报",
+        "研报搜索",
+        "AI总结",
+        "预警"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.alpha-sense.com",
+      "pros": [
+        "市场情报全面",
+        "AI分析精准"
+      ],
+      "cons": [
+        "仅企业",
+        "价格高"
+      ]
+    },
+    {
+      "id": "tool-113",
+      "name": "Kavout",
+      "category": "finance-investment",
+      "description": "AI股票评分和选股平台",
+      "nl_input": "股票代码或筛选条件",
+      "nl_output": "股票评分、排名、选股建议",
+      "features": [
+        "AI评分",
+        "量化因子",
+        "选股筛选",
+        "回测"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.kavout.com",
+      "pros": [
+        "AI选股创新",
+        "量化打分"
+      ],
+      "cons": [
+        "中国市场有限",
+        "付费"
+      ]
+    },
+    {
+      "id": "tool-114",
+      "name": "Numerai",
+      "category": "finance-investment",
+      "description": "去中心化量化对冲基金，数据科学家竞赛预测市场",
+      "nl_input": "提交预测模型",
+      "nl_output": "投资组合权重",
+      "features": [
+        "去中心化",
+        "数据竞赛",
+        "加密激励",
+        "量化"
+      ],
+      "price": "Free",
+      "open_source": true,
+      "github": "https://github.com/numerai",
+      "website": "https://numer.ai",
+      "pros": [
+        "创新模式",
+        "数据科学家社区"
+      ],
+      "cons": [
+        "加密门槛",
+        "非传统投资"
+      ]
+    },
+    {
+      "id": "tool-115",
+      "name": "Kensho (S&P Global)",
+      "category": "finance-investment",
+      "description": "S&P Global的AI金融分析平台",
+      "nl_input": "自然语言金融查询",
+      "nl_output": "金融分析、预测、可视化",
+      "features": [
+        "金融NLP",
+        "预测分析",
+        "可视化",
+        "合规"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.spglobal.com",
+      "pros": [
+        "金融数据权威",
+        "AI分析强"
+      ],
+      "cons": [
+        "价格极高",
+        "仅机构"
+      ]
+    },
+    {
+      "id": "tool-116",
+      "name": "Khanmigo (Khan Academy)",
+      "category": "education-learning",
+      "description": "可汗学院推出的AI学习助手，基于GPT-4",
+      "nl_input": "学习问题、作业求助",
+      "nl_output": "分步解释、练习、个性化辅导",
+      "features": [
+        "分步讲解",
+        "苏格拉底式",
+        "个性化",
+        "练习生成"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.khanacademy.org/khan-labs",
+      "pros": [
+        "苏格拉底式教学",
+        "不直接给答案",
+        "Khan内容库"
+      ],
+      "cons": [
+        "需付费",
+        "仅英语"
+      ]
+    },
+    {
+      "id": "tool-117",
+      "name": "Duolingo Max",
+      "category": "education-learning",
+      "description": "多邻国的AI订阅版，GPT-4驱动对话练习",
+      "nl_input": "自然语言对话练习外语",
+      "nl_output": "纠错、解释、对话练习",
+      "features": [
+        "AI对话",
+        "语法解释",
+        "纠错",
+        "角色扮演"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.duolingo.com/max",
+      "pros": [
+        "对话练习自然",
+        "即时反馈"
+      ],
+      "cons": [
+        "需Max订阅",
+        "仅英语课程"
+      ]
+    },
+    {
+      "id": "tool-118",
+      "name": "Quizlet Q-Chat",
+      "category": "education-learning",
+      "description": "Quizlet的AI学习助手，对话式学习",
+      "nl_input": "学习主题提问",
+      "nl_output": "对话式问答、记忆辅助、测验",
+      "features": [
+        "对话学习",
+        "记忆辅助",
+        "测验生成",
+        "闪卡"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://quizlet.com",
+      "pros": [
+        "对话学习有趣",
+        "闪卡经典"
+      ],
+      "cons": [
+        "AI功能需付费"
+      ]
+    },
+    {
+      "id": "tool-119",
+      "name": "Photomath",
+      "category": "education-learning",
+      "description": "拍照即可获取数学解题步骤的AI工具",
+      "nl_input": "拍照或手写输入数学题",
+      "nl_output": "分步解题过程",
+      "features": [
+        "拍照识别",
+        "分步解题",
+        "多方法",
+        "动画演示"
+      ],
+      "price": "Freemium",
+      "open_source": false,
+      "github": null,
+      "website": "https://photomath.com",
+      "pros": [
+        "手写识别好",
+        "步骤详细"
+      ],
+      "cons": [
+        "仅数学",
+        "高级功能付费"
+      ]
+    },
+    {
+      "id": "tool-120",
+      "name": "Gradescope AI",
+      "category": "education-learning",
+      "description": "AI批改作业和评分的平台",
+      "nl_input": "上传学生作业/试卷",
+      "nl_output": "自动评分、批注、分析",
+      "features": [
+        "自动评分",
+        "手写识别",
+        "批改分析",
+        "LMS集成"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.gradescope.com",
+      "pros": [
+        "教师效率提升",
+        "手写识别好"
+      ],
+      "cons": [
+        "需教师端设置",
+        "仅教育机构"
+      ]
+    },
+    {
+      "id": "tool-121",
+      "name": "Squirrel AI (松鼠AI)",
+      "category": "education-learning",
+      "description": "中国AI自适应教育平台，个性化学习路径",
+      "nl_input": "学生做题、系统自适应调整",
+      "nl_output": "个性化学习路径、知识点诊断",
+      "features": [
+        "自适应学习",
+        "知识图谱",
+        "薄弱点诊断",
+        "真人+AI"
+      ],
+      "price": "Paid",
+      "open_source": false,
+      "github": null,
+      "website": "https://www.squirrelai.com",
+      "pros": [
+        "自适应算法成熟",
+        "中国市场深耕"
+      ],
+      "cons": [
+        "线下为主",
+        "价格偏高"
+      ]
+    },
+    {
+      "id": "tool-122",
+      "name": "Microsoft AutoGen",
+      "category": "open-source-framework",
+      "description": "微软开源的AI Agent框架，支持多Agent对话协作",
+      "nl_input": "用Python定义多Agent对话",
+      "nl_output": "多Agent协作完成任务",
+      "features": [
+        "多Agent",
+        "对话式编程",
+        "工具调用",
+        "代码执行"
+      ],
+      "price": "Free",
+      "open_source": true,
+      "github": "https://github.com/microsoft/autogen",
+      "website": "https://microsoft.github.io/autogen/",
+      "pros": [
+        "微软维护",
+        "多Agent协作强"
+      ],
+      "cons": [
+        "学习曲线陡",
+        "文档待完善"
+      ]
+    },
+    {
+      "id": "tool-123",
+      "name": "Semantic Kernel",
+      "category": "open-source-framework",
+      "description": "微软的AI编排SDK，.NET/Python/Java多语言支持",
+      "nl_input": "用代码编排AI能力和插件",
+      "nl_output": "AI应用到企业系统集成",
+      "features": [
+        "多语言SDK",
+        "插件系统",
+        "企业集成",
+        "记忆管理"
+      ],
+      "price": "Free",
+      "open_source": true,
+      "github": "https://github.com/microsoft/semantic-kernel",
+      "website": "https://learn.microsoft.com/semantic-kernel",
+      "pros": [
+        "企业级",
+        "多语言",
+        "微软生态"
+      ],
+      "cons": [
+        "偏向微软技术栈",
+        "社区较小"
+      ]
+    },
+    {
+      "id": "tool-124",
+      "name": "LlamaIndex",
+      "category": "open-source-framework",
+      "description": "数据框架，连接LLM与外部数据源",
+      "nl_input": "定义数据连接器和查询引擎",
+      "nl_output": "基于数据源的AI回答",
+      "features": [
+        "数据连接器",
+        "索引",
+        "查询引擎",
+        "RAG"
+      ],
+      "price": "Free",
+      "open_source": true,
+      "github": "https://github.com/run-llama/llama_index",
+      "website": "https://www.llamaindex.ai",
+      "pros": [
+        "RAG最佳框架",
+        "数据连接丰富",
+        "文档好"
+      ],
+      "cons": [
+        "学习曲线",
+        "更新频繁"
+      ]
+    },
+    {
+      "id": "tool-125",
+      "name": "Dify",
+      "category": "open-source-framework",
+      "description": "开源的LLMOps平台，可视化构建AI应用",
+      "nl_input": "拖拽式构建AI工作流",
+      "nl_output": "AI应用、聊天机器人、Agent",
+      "features": [
+        "可视化",
+        "RAG管线",
+        "Agent模式",
+        "多模型"
+      ],
+      "price": "Freemium",
+      "open_source": true,
+      "github": "https://github.com/langgenius/dify",
+      "website": "https://dify.ai",
+      "pros": [
+        "低代码",
+        "中文友好",
+        "功能全面"
+      ],
+      "cons": [
+        "高级功能付费",
+        "自部署复杂"
+      ]
+    },
+    {
+      "id": "tool-126",
+      "name": "Flowise",
+      "category": "open-source-framework",
+      "description": "开源的拖拽式LLM应用构建器",
+      "nl_input": "可视化拖拽节点",
+      "nl_output": "AI工作流/聊天流",
+      "features": [
+        "拖拽构建",
+        "LangChain底层",
+        "多模型",
+        "嵌入"
+      ],
+      "price": "Free",
+      "open_source": true,
+      "github": "https://github.com/FlowiseAI/Flowise",
+      "website": "https://flowiseai.com",
+      "pros": [
+        "完全免费",
+        "拖拽易用",
+        "社区活跃"
+      ],
+      "cons": [
+        "复杂场景受限",
+        "性能一般"
+      ]
+    },
+    {
+      "id": "tool-127",
+      "name": "BabyAGI",
+      "category": "open-source-framework",
+      "description": "经典开源自主AI Agent，任务规划+执行",
+      "nl_input": "设定目标和任务管理",
+      "nl_output": "自主任务分解和执行",
+      "features": [
+        "任务规划",
+        "自主执行",
+        "记忆",
+        "优先级"
+      ],
+      "price": "Free",
+      "open_source": true,
+      "github": "https://github.com/yoheinakajima/babyagi",
+      "website": null,
+      "pros": [
+        "自主性高",
+        "经典开源项目",
+        "学习价值大"
+      ],
+      "cons": [
+        "实用场景有限",
+        "维护少"
+      ]
+    },
+    {
+      "id": "tool-128",
+      "name": "SuperAGI",
+      "category": "open-source-framework",
+      "description": "开源自主AI Agent平台，多功能工具集",
+      "nl_input": "设定Agent目标和工具",
+      "nl_output": "自主执行、工具调用",
+      "features": [
+        "多Agent",
+        "工具箱",
+        "GUI",
+        "市场"
+      ],
+      "price": "Free",
+      "open_source": true,
+      "github": "https://github.com/TransformerOptimus/SuperAGI",
+      "website": "https://superagi.com",
+      "pros": [
+        "多Agent",
+        "GUI界面",
+        "工具丰富"
+      ],
+      "cons": [
+        "稳定性待提升",
+        "社区中等"
+      ]
+    },
+    {
+      "id": "tool-129",
+      "name": "MetaGPT",
+      "category": "open-source-framework",
+      "description": "多Agent协作框架，模拟软件公司角色",
+      "nl_input": "一句话需求",
+      "nl_output": "产品需求文档、设计、代码",
+      "features": [
+        "角色协作",
+        "SOP驱动",
+        "文档生成",
+        "代码输出"
+      ],
+      "price": "Free",
+      "open_source": true,
+      "github": "https://github.com/geekan/MetaGPT",
+      "website": "https://deepwisdom.ai",
+      "pros": [
+        "端到端",
+        "角色分工好"
+      ],
+      "cons": [
+        "输出质量不稳定",
+        "适合演示"
+      ]
+    },
+    {
+      "id": "tool-130",
+      "name": "Camel",
+      "category": "open-source-framework",
+      "description": "多Agent角色扮演框架，探索AI协作极限",
+      "nl_input": "定义Agent角色和任务",
+      "nl_output": "多Agent对话和协作",
+      "features": [
+        "角色扮演",
+        "多Agent",
+        "任务导向"
+      ],
+      "price": "Free",
+      "open_source": true,
+      "github": "https://github.com/camel-ai/camel",
+      "website": "https://www.camel-ai.org",
+      "pros": [
+        "角色扮演框架好",
+        "可扩展"
+      ],
+      "cons": [
+        "偏学术",
+        "实用场景少"
+      ]
+    },
+    {
+      "id": "tool-131",
+      "name": "FastGPT",
+      "category": "open-source-framework",
+      "description": "开源知识库问答平台，专注私有知识库构建",
+      "nl_input": "导入文档构建知识库",
+      "nl_output": "AI知识库问答",
+      "features": [
+        "知识库",
+        "RAG",
+        "可视化",
+        "多模型"
+      ],
+      "price": "Free",
+      "open_source": true,
+      "github": "https://github.com/labring/FastGPT",
+      "website": "https://fastgpt.in",
+      "pros": [
+        "中文友好",
+        "知识库构建快"
+      ],
+      "cons": [
+        "社群版有限制",
+        "需自部署"
+      ]
+    },
+    {
+      "id": "tool-132",
+      "name": "Agno",
+      "category": "open-source-framework",
+      "description": "轻量级AI Agent框架，构建高性能Agent",
+      "nl_input": "Python定义Agent",
+      "nl_output": "高性能Agent执行",
+      "features": [
+        "轻量",
+        "高性能",
+        "多模态",
+        "工具调用"
+      ],
+      "price": "Free",
+      "open_source": true,
+      "github": "https://github.com/agno-agi/agno",
+      "website": "https://agno.app",
+      "pros": [
+        "轻量高效",
+        "设计简洁"
+      ],
+      "cons": [
+        "较新",
+        "社区小"
+      ]
+    }
+  ]
+}
