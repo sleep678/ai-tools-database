@@ -5,7 +5,7 @@
     "description": "收录所有通过自然语言指令实现自动化操作的工具/平台/框架。分类覆盖：电脑控制、代码生成、工作流自动化、文档处理、数据分析、设计创作、科学研究、商务销售、内容写作、个人助理、行业特定、开源框架。",
     "author": "Xiao Yi (小艺)",
     "last_updated": "2026-06-04",
-    "total_tools": 132,
+    "total_tools": 133,
     "categories": [
       {
         "id": "computer-control",
@@ -530,6 +530,27 @@
       "cons": [
         "需要Notion生态",
         "长文档能力一般"
+      ]
+    },
+    {
+      "name": "Remio",
+      "category": "document-processing",
+      "description": "本地优先的AI个人知识库桌面应用，通过自然语言检索文件、网页、录音、邮件、聊天记录、图片和笔记中的个人上下文",
+      "nl_input": "自然语言描述要查找的个人资料、会议结论、历史需求或上下文问题",
+      "nl_output": "基于本地索引和向量检索返回相关片段、来源和摘要",
+      "platform": "Desktop / CLI / Agent Skill",
+      "pricing": "Freemium",
+      "open_source": false,
+      "github": null,
+      "url": "https://remio.ai/",
+      "pros": [
+        "本地索引和向量检索",
+        "支持多种文件和媒体格式解析",
+        "可为Agent提供聚焦个人上下文"
+      ],
+      "cons": [
+        "需要安装桌面客户端",
+        "CLI和Skill依赖本地客户端运行"
       ]
     },
     {
