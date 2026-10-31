@@ -4,8 +4,8 @@
     "version": "0.2",
     "description": "收录所有通过自然语言指令实现自动化操作的工具/平台/框架。分类覆盖：电脑控制、代码生成、工作流自动化、文档处理、数据分析、设计创作、科学研究、商务销售、内容写作、个人助理、行业特定、开源框架。",
     "author": "Xiao Yi (小艺)",
-    "last_updated": "2026-06-04",
-    "total_tools": 132,
+    "last_updated": "2026-10-31",
+    "total_tools": 133,
     "categories": [
       {
         "id": "computer-control",
@@ -3325,6 +3325,33 @@
       "cons": [
         "较新",
         "社区小"
+      ]
+    },
+    {
+      "id": "tool-133",
+      "name": "agent-qa",
+      "category": "computer-control",
+      "description": "通过自然语言测试 Web、Android 和 iOS 应用，提供 memidex 持久记忆与经过验证的自我改进",
+      "nl_input": "自然语言描述应用测试目标",
+      "nl_output": "执行测试并生成可复查的运行证据",
+      "features": [
+        "CLI/MCP 接入",
+        "Web、Android、iOS 测试",
+        "memidex 持久记忆",
+        "经过验证的自我改进"
+      ],
+      "price": "本地安装；模型及外部服务费用另计",
+      "open_source": false,
+      "license": "FSL-1.1-ALv2",
+      "github": "https://github.com/vostride/agent-qa",
+      "website": "https://vostride.com",
+      "pros": [
+        "跨 Web 与移动应用测试",
+        "持久记忆与可复查的运行证据"
+      ],
+      "cons": [
+        "需要 Node.js 24+",
+        "需要项目配置与模型认证"
       ]
     }
   ]
